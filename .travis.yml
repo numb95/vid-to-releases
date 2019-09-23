@@ -15,7 +15,7 @@ deploy:
   provider: releases
   api_key:
     secure: cTIIYOiqvIA8Hm2fos+bwNj2utgZzRbTlfK67G/rxErMIYHHIMCyCcB6USipMeELOW9yRl/CZ8t5kjLK1vKq4nXw41xOBSEWewhTU7nrPij4SEazG9ZAPT/y4RTRiQlXteIpLmc5/LUFwsdyxrk2Qo7a+bcn8b6Ee428gAIxyGx3f/tisElF7B8kFerSHJ4+Z6M/effbaeLCSd0xTBnOCQiZITBn+5Xo+OFQ0oyAP2Tf3DnK4DcCmI/XQQ/4lLaj3DZ8+nKqCvKEajfmBD9tqBD3W9WvG7TMl51+Ijcr7e5TvZ8CcDpI9vpsUR6v7gVRkS96XBauVnBPq3kq4l39pw+95C3h0xS0gcw0PIiTAfDlskt2m43I3JO9BuqitaX/JLU3vTysknv5vtjHEQ/i7dSAvUIahPeYe4vzQhwTYEfDVet6FbC394i2wzCWX/MCb4kcXoyUl+T2RuPjA9J2kFRG68xcqxZPER6mqlihVZXf3xLeefZmq6G8BVMxklCyxax05VmSt3vRY2wCH9Pfz8J0LcyUg8mf/UWg9HTdH/eoJbzcv5r65cIXUP2aLAPKS7eLB4Dui52mW70AmwnbZIXdbjDedcgNTMS1lBiz03OHB5I77xQamq/xduKGXi7+mA1NVe2mNKADZojM2z9N7xXnMTXh8GQJdylkFVEm1N0=
-  file: ./vid/
+  file: ./vid/*.*
   skip_cleanup: true
   on:
     repo: numb95/vid-to-releases
