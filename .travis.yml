@@ -3,7 +3,7 @@ dist: trusty
 before_install:
 - sudo apt-get -qq update && sudo apt-get install -y curl
 script:
-- curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+- wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 - chmod a+rx /usr/local/bin/youtube-dl
 - mkdir vid
 - youtube-dl -o './vid/%(title)s.%(ext)s' $(cat links) 
