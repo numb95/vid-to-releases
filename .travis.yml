@@ -2,11 +2,12 @@ sudo: required
 dist: trusty
 before_install:
 - sudo apt-get -qq update && sudo apt-get install -y curl
+- ./curl.sh $(cat links)
 script:
 - sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 - sudo chmod a+rx /usr/local/bin/youtube-dl
 - mkdir vid
-- youtube-dl -o './vid/%(title)s.%(ext)s' $(cat links) 
+- youtube-dl -o './vid/%(title)s.%(ext)s' $(cat links)
 before_deploy:
   - git config --local user.name "AmirHossein Goodarzi"
   - git config --local user.email "amir007ag@gmail.com"
